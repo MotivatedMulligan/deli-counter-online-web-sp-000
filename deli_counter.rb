@@ -12,12 +12,12 @@ def line(katz_deli)
    end
 
 
-  
+
 end
 def take_a_number(katz_deli, name)
-katz_deli.each_with_index(1).push {|name, index|puts "Welcome, #{name}. You are number #{index} in line." }
- end
-
+katz_deli.push(name)
+puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+end
  def now_serving(array)
   if array.length > 0
     array.each_with_index(1) {|name, index|puts "Currently serving #{name}#{index}"}
