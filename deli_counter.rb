@@ -10,6 +10,7 @@ def line(numinline)
      end
      puts "The line is: #{array.join(" ")}"
    end
+   array
 end
 
 def take_a_number(katz_deli, name)
