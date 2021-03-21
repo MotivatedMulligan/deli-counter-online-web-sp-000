@@ -1,14 +1,14 @@
 # Write your code here.
 
 def line(katz_deli)
-  line_method_array = []
+     array = []
   if katz_deli.length == 0
      puts "The line is currently empty."
    else
-     line_method_array.each.with_index(0) do |name, index|
-       line_method_array.push("#{index}. #{name}")
+       array.each.with_index(0) do |name, index|
+      array.push("#{index}. #{name}")
      end
-     puts "The line is: #{line_method_array.join(" ")}"
+     puts "The line is: #{array.join(" ")}"
    end
 
 end
