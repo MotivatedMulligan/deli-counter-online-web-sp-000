@@ -1,9 +1,11 @@
 # Write your code here.
 
-def line(array)
-  if array.length > 0
-  array.each_index(1) {|index| puts "The line is currently: #{index}"}
-  else puts "The line is currently empty."
+def line(katz_deli)
+  if katz_deli.empty?
+     puts "The line is currently."
+  else
+    list_of_names = katz_deli.collect.with_index(1) {|element, index|"#{index}. #{element}"}.join{" "}
+     puts "The line is currently: #{list_of_names}"
   end
 end
 
