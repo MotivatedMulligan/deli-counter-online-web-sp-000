@@ -5,7 +5,7 @@ def line(katz_deli)
      puts "The line is currently empty."
   else
     list_of_names = "The line is currently: "
-    list_of_names = katz_deli.each.with_index(1) {|element, index|list_of_names += "#{index}. #{element}"}.join(" ")
+    list_of_names = katz_deli.each.with_index(1) do |element, index|"#{index}. #{element}"end.join(" ")
      puts "The line is currently: #{list_of_names}"
   end
 end
