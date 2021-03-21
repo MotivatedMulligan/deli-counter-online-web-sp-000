@@ -2,7 +2,7 @@
 
 def line(katz_deli)
   if katz_deli.empty?
-     puts "The line is currently."
+     puts "The line is currently empty."
   else
     list_of_names = katz_deli.collect.with_index(1) {|element, index|"#{index}. #{element}"}.join{" "}
      puts "The line is currently: #{list_of_names}"
